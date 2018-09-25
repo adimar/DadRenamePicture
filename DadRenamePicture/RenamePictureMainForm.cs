@@ -131,7 +131,7 @@ namespace DadRenamePicture
         {
             if (cbxShowLog.Checked)
             {
-                this.Height = 850;
+                this.Height = 650;
             }
             else
             {

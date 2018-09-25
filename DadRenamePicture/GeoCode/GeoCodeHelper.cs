@@ -14,7 +14,7 @@ namespace DadRenamePicture.GeoCode
 
     class GeoCodeHelper
     {
-        private static GeoCodeServicePlugin geoCodePlugin = new MapQuestPlugin();
+        private static GeoCodeServicePlugin geoCodePlugin = new LocationIQPlugin();
         public static string ResolveGeoCoordinates(Image workImage)
         {
             GeoCoordinate cord = ExifToGeoCoordinate.GetGeoCoordinate(workImage);

@@ -1,0 +1,113 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.Designer.cs" caret="3571" fromTop="15" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="2432" fromTop="33" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="0" fromTop="0" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.Designer.cs" caret="3571" fromTop="15" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="2603" fromTop="15" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="2603" fromTop="18" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="2547" fromTop="28" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="2525" fromTop="27" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="2525" fromTop="27" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="2603" fromTop="27" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="2523" fromTop="31" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="2523" fromTop="23" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="1499" fromTop="7" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="1324" fromTop="11" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="1687" fromTop="27" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="758" fromTop="9" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="2497" fromTop="17" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="1883" fromTop="18" />
+      <File id="C9633445-E460-4163-9E54-6BF23C3EA05A/f:Form1.cs" caret="2417" fromTop="32" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.Windows.Forms.FolderBrowserDialog">
+      <Item value="ShowNewFolderButton" priority="0" />
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="SelectedPath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="false" priority="0" />
+      <Item value="FileDialog`0" priority="0" />
+      <Item value="dr" priority="0" />
+      <Item value="int" priority="4" />
+      <Item value="File`0" priority="1" />
+      <Item value="Directory`0" priority="0" />
+      <Item value="i" priority="2" />
+      <Item value="string" priority="3" />
+      <Item value="String`0" priority="0" />
+      <Item value="txtOut" priority="0" />
+      <Item value="if" priority="1" />
+      <Item value="fileName" priority="0" />
+      <Item value="Environment`0" priority="0" />
+      <Item value="number" priority="0" />
+      <Item value="comparisonType" priority="0" />
+      <Item value="StringComparison`0" priority="0" />
+      <Item value="try" priority="0" />
+      <Item value="Integer" priority="0" />
+      <Item value="fileNumStr" priority="0" />
+      <Item value="throw" priority="0" />
+      <Item value="else" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Move`0" priority="1" />
+      <Item value="Copy`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="EnumerateFiles`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="OrderBy`2" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="CompareTo`0" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Replace`0" priority="3" />
+      <Item value="StartsWith`0" priority="0" />
+      <Item value="EndsWith`0" priority="0" />
+      <Item value="Substring`0" priority="0" />
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment">
+      <Item value="NewLine" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.StringComparison">
+      <Item value="CurrentCultureIgnoreCase" priority="0" />
+      <Item value="OrdinalIgnoreCase" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
