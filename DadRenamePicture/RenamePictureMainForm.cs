@@ -27,25 +27,36 @@ namespace DadRenamePicture
 
             txtSourceFolder.Text = defPicSourceFolder;
             txtColor.BackColor = Color.Red;
+            setShowLog();
+
+            Console.SetOut(new Logger(txtLogger));
+            Console.WriteLine("Rename Picture Form Initialized...");
         }
 
         private void btnProcessPictures_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("started processing pictures...");
             string picSourceFolder = txtSourceFolder.Text;
             string picTargetFolder = (cbxAddDate.Checked?picSourceFolder + "_Date":picSourceFolder+"_turned");
 
             if (Directory.Exists(picTargetFolder))
             {
+
+                Console.WriteLine("Folder {0} already exists.", picTargetFolder);
                 DialogResult dr = MessageBox.Show("Folder already exists." + Environment.NewLine + " Do you want to delete it?", "Are You sure?", MessageBoxButtons.YesNo);
 
                 if(!dr.Equals(DialogResult.Yes))
                 {
+                    Console.WriteLine("Folder {0} already exists, aborting at user's request.", picTargetFolder);
                     return;
                 }
 
+                Console.WriteLine("Folder {0} already exists, deleting it at user's request.", picTargetFolder);
                 Directory.Delete(picTargetFolder, true);
+                Console.WriteLine("Folder {0} deleted successfully.", picTargetFolder);
             }
-          
+
+            Console.WriteLine("Creating Folder {0}", picTargetFolder);
             Directory.CreateDirectory(picTargetFolder);
 
             btnProcessPictures.Enabled = false;
@@ -110,15 +121,24 @@ namespace DadRenamePicture
             }
         }
 
+        private void cbxShowLog_CheckedChanged(object sender, EventArgs e)
+        {
+            this.setShowLog();
+            
+        }
 
-     
-
-   
-      
-
-       
-
-
+        private void setShowLog()
+        {
+            if (cbxShowLog.Checked)
+            {
+                this.Height = 850;
+            }
+            else
+            {
+                this.Height = 300;
+            }
+            appLogSplitter.Panel2Collapsed = !cbxShowLog.Checked;
+        }
        
     }
 

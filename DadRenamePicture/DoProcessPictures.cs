@@ -72,11 +72,11 @@ namespace DadRenamePicture
             Regex r = new Regex(":");
 
             using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
-            using (Image myImage = Image.FromStream(fs, false, false))
+            using (Image workImage = Image.FromStream(fs, false, false))
             {
-                if (myImage.PropertyIdList.Contains(36867))
+                if (workImage.PropertyIdList.Contains(36867))
                 {
-                    PropertyItem propItem = myImage.GetPropertyItem(36867);
+                    PropertyItem propItem = workImage.GetPropertyItem(36867);
                     string dateTaken = r.Replace(Encoding.UTF8.GetString(propItem.Value), "-", 2);
                     picDate = DateTime.Parse(dateTaken);
                 }
@@ -85,9 +85,9 @@ namespace DadRenamePicture
                     picDate = File.GetLastWriteTime(path);
                 }
 
-                if (myImage.PropertyIdList.Contains(0x112))
+                if (workImage.PropertyIdList.Contains(0x112))
                 {
-                    PropertyItem propItem = myImage.GetPropertyItem(0x112);
+                    PropertyItem propItem = workImage.GetPropertyItem(0x112);
 
                     picOrientation = propItem.Value[0];
                 }
@@ -100,17 +100,14 @@ namespace DadRenamePicture
 
                 try
                 {
-                    cameraName = System.Text.Encoding.UTF8.GetString(myImage.GetPropertyItem(271).Value);
+                    cameraName = System.Text.Encoding.UTF8.GetString(workImage.GetPropertyItem(271).Value);
                 }
                 catch
                 {
                     cameraName = "FUJIFILM";
                 }
 
-
-               
-
-                locationString = ProcessGPS.GetGPSLocation(myImage);
+                locationString = GeoCode.GeoCodeHelper.ResolveGeoCoordinates(workImage);
                 
             }
         }
